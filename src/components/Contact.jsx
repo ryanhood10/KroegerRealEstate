@@ -53,17 +53,17 @@ const handleSubmit = async (e) => {
     };
 
     return(
-        <div className="w-full py-16 text-white px-4 bg-black">
+        <div className="w-full py-16 text-white px-4 bg-blue-900">
             <div className="max-w-[1240px] mx-auto grid"> 
                 <div className="lg:col-span-2">
-                <h1 className="md:text-4xl sm:text-3xl text-2xl font-bold-py-2"> Want to earn more revenue and reach more clients?  </h1>
-                    <p>Send us a message!</p>
+                <h1 className="md:text-4xl sm:text-3xl text-2xl font-bold-py-2"> Lets work together! </h1>
+                <br></br>
+                    <p>Email us!</p>
                 </div>
                 <div className="my-4">
                     <div className="flex flex-col items-center">
                         {/* className='p-3 flex w-full rounded-md' */}
                         <form className="w-full" onSubmit={handleSubmit}>
-                            <h3>Contact</h3>
                             {['name', 'email', 'message'].map((field) => (
                                 <div key={field}>
                                 <p>{field[0].toUpperCase() + field.slice(1)}:</p>
@@ -96,13 +96,8 @@ const handleSubmit = async (e) => {
                         <button type="submit" className="bg-[#00df9a] w-[200px] rounded-md font-medium my-6 mx-auto py-3 text-black">Send Email</button>
                             </form>
                     </div>
-                    <p>
-                      Learn more about our established techniques on our{" "}
-                      <Link to="/solutions" className="text-[#00df9a]">
-                        Solutions
-                      </Link>{" "}
-                      page.
-                    </p>
+                    <p>By phone, you can Contact Steve Kroeger at 615.377.9779</p>
+
 
                 </div>
 
